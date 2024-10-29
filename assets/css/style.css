@@ -2314,6 +2314,188 @@ section {
   }
 }
 
+
+
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing {
+  padding: 60px 0 120px 0;
+}
+
+.pricing .section-title {
+  margin-bottom: 40px;
+}
+
+.pricing .pricing-item{
+  background: #10192a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);*/
+  padding: 30px 30px !important;
+  height: auto;
+  position: relative;
+  border-radius: 18px;
+  margin: 0px 10px;
+}
+.pricing .pricing-item:hover{
+  box-shadow: -1px 1px 6px 3px rgba(251, 176, 46, 0.51);
+  -webkit-box-shadow: -1px 1px 8px 4px rgba(251, 176, 46, 0.51);
+  -moz-box-shadow: -1px 1px 8px 4px rgba(251, 176, 46, 0.51);
+  transform: translateY(-10px);
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+.pricing .pricing-item .other-box{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row;
+}
+.pricing .why-we-are-different-text{
+  padding: 20px;
+}
+.pricing .why-we-are-different-text p{
+  color: #fff;
+}
+
+.pricing-item img{
+  width: 200px;
+  height: auto;
+  margin: 10px 0px;
+}
+.pricing h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.pricing .vs-box{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.pricing .vs-box img{
+  width: 100%;
+  height: auto;
+}
+.pricing .icon {
+  margin: 30px auto 20px auto;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.pricing .icon i {
+  color: var(--color-mainyellow);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  line-height: 0;
+}
+
+
+.pricing h4 {
+  font-size: 48px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.pricing h4 sup {
+  font-size: 28px;
+}
+
+.pricing h4 span {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricing ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px !important;
+}
+.pricing ul li img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.featured ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  line-height: 20px;
+}
+
+.featured  ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.pricing ul i {
+  color: var(--color-mainyellow);
+  font-size: 24px;
+  padding-right: 3px;
+}
+
+.pricing ul .na {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.pricing ul .na i {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.pricing ul .na span {
+  text-decoration: line-through;
+}
+
+.pricing .buy-btn {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+}
+
+.pricing .buy-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+
+@media (min-width: 992px) {
+  .pricing .featured {
+    transform: scale(1.15);
+  }
+
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -2813,6 +2995,15 @@ section {
   #footer .footer-top .footer-info{
     text-align: center;
   }
+
+  .vs-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vs-box img{
+    width: 120px !important;
+  }
 }
 
 
@@ -2920,5 +3111,14 @@ section {
   .thanks_content .whatsapp_text{
     font-size: 12px;
     font-style: italic;
+  }
+
+  .vs-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vs-box img{
+    width: 100px !important;
   }
 }
