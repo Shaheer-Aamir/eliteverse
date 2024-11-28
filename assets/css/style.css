@@ -772,16 +772,16 @@ h6 {
   font-size: 24px;
   line-height: 1.5;
 }
-#typing-effect {
+/*#typing-effect {
     font-size: 2rem;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     text-align: center;
     display: inline-block;
     font-style: italic;
-    white-space: nowrap; /* Prevents wrapping */
-    overflow: hidden; /* Hides the text being typed */
-    border-right: 2px solid #fff; /* Adds a blinking cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
     animation: blinkCursor 0.6s step-end infinite;
     background: linear-gradient(
         to right,
@@ -796,18 +796,25 @@ h6 {
 
 #hero h2 {
     text-align: center;
-    height: 2.5rem; /* Fixed height to prevent layout shifts */
+    height: 2.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 @keyframes blinkCursor {
     50% {
         border-color: transparent; /* Makes the cursor blink */
     }
 }
-
+@media(max-width: 470px){
+  #typing-effect{
+    font-size: 1.4rem;
+  }
+  #hero h2{
+    height: 1.5rem;
+  }
+}
 .btn-get-started,
 .btn-get-started:focus {
   padding: 9px 24px 9px 24px;
@@ -3099,7 +3106,7 @@ section {
     top: 10%;
   }
   #hero .hero-container h2{
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
   .btn-get-started{
     padding: 12px 24px 12px 24px;
