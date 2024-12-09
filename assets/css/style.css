@@ -817,10 +817,10 @@ h6 {
 }
 .btn-get-started,
 .btn-get-started:focus {
-  padding: 9px 24px 9px 24px;
-  border-radius: 17px;
+  padding: 8px 50px 8px 50px;
+  border-radius: 34px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
   color: #fff;
   border: 2px solid var(--color-mainblue);
   background-color: var(--color-mainblue);
